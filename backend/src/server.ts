@@ -1,9 +1,10 @@
 import express, { NextFunction, Request, response, Response } from "express";
 import "express-async-errors";
-import {userRoute} from "./routes/UserRoute"
+import { userRoute } from "./routes/UserRoute"
 import { areaRoutes } from "./routes/AreaRoute";
 import { formRoute } from "./routes/FormRoute";
 import { videoRoute } from "./routes/VideoRoute";
+import { areaVideoRoutes } from "./routes/AreaVideoRoutes";
 
 const app = express();
 const cors = require("cors");
@@ -29,9 +30,10 @@ app.use('/area', areaRoutes);
 app.use('/user', userRoute);
 app.use('/forms', formRoute);
 app.use('/video', videoRoute);
+app.use('/areavideo', areaVideoRoutes);
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-    if(err instanceof Error) {
+    if (err instanceof Error) {
         return res.status(400).json({
             message: err.message,
         });
