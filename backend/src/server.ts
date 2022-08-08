@@ -45,14 +45,4 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 });
 app.listen(port, () => console.log('Servidor rodando na porta: ' + port));
 
-function normalizePort(val: string) {
-    var port = parseInt(val, 10);
-    if (isNaN(port)) {
-        return val;
-    }
-    if (port >= 0) {
-        return port;
-    }
-    return false;
-}
 
