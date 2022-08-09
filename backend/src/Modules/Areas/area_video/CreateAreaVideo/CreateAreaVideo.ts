@@ -3,7 +3,7 @@ import { prisma } from "../../../../database/PrismaClient";
 interface ICreateAreaVideo {
     area_id: number;
     user_id: number;
-    video_id: any[];
+    video_id: number;
     order: number;
 }
 
