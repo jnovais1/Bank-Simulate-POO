@@ -3,14 +3,17 @@ import { DeleteAreaVideo } from "./DeleteAreaVideoByID";
 
 export class DeleteAreaVideoByIDController {
     async handle(req: Request, res: Response) {
-        const { id } = req.params;
+        const { id, id2 } = req.params;
 
-        let area_video_id: number;
-        area_video_id = Number(id);
+        let area_id: number;
+        area_id = Number(id);
+        let video_id: number;
+        video_id = Number(id2);
 
         const deleteAreaVideoByID = new DeleteAreaVideo();
         const deletedAreaVideo = await deleteAreaVideoByID.execute({
-            area_id: area_video_id
+            area_id,
+            video_id
         });
         return res.json(deletedAreaVideo);
     }
