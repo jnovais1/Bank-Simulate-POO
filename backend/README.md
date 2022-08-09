@@ -1,28 +1,36 @@
 # marca_ambiental
-Projeto Mãos que Conectam com a Segurança
+<h3>Projeto Mãos que Conectam com a Segurança</h3>
 
-/*
 
-Este software é uma API criada para a empresa Marca Ambiental, onde possui diversas rotas e o caminho para o banco de dados será explicado neste documento: 
 
-A geração de modelos e conexão é feita pelo 'Prisma.io'.
+<strong><blockquote>Este software é uma API criada para a empresa Marca Ambiental, onde possui diversas rotas e o caminho para o banco de dados será explicado neste documento: </blockquote></strong>
 
-Para que a aplicação seja inicializada pela primeira vez, é necessário executar os seguintes passos: 
 
-* Criação de um arquivo .env e preencher os campos da seguinte forma: 
 
-* DATABASE_URL: "postgresql://janedoe:mypassword@localhost:5432/mydb?schema=sample". Alterando o link de conexão com o banco de dados, usuário e senha personalizado que estará usando. 
+A criação de modelos e conexão é feita pelo 'Prisma.io'.
 
-* SECRET: Chave v4 UUID qualquer gerada. 
+
+
+<strong>_Para que a aplicação seja inicializada pela primeira vez, é necessário executar os seguintes passos: </strong>_
+<ul>
+<strong><li>Criação de um arquivo .env e preencher os campos da seguinte forma: </strong>
+
+DATABASE_URL: "postgresql://janedoe:mypassword@localhost:5432/mydb?schema=sample". </li> Alterando o link de conexão com o banco de dados, usuário e senha personalizado que estará usando.
+
+<strong><li>SECRET: Chave v4 UUID qualquer gerada. </li></strong>
 Exemplo: 'da755695-01a4-44c1-8380-9bde6f45cf5e'.
 
-* Instalação dos módulos:
+
+<strong><li>Instalação dos módulos: </li></strong>
 npm install 
 
-* Criação do banco de dados:
+
+<strong><li>Criação do banco de dados: </li></strong>
 npx prisma db push 
 
-* Inicialização da aplicação: 
-npm start
 
-*/
+<strong><li>Inicialização da aplicação: </li></strong>
+npm start 
+<ul>
+
+  
