@@ -11,7 +11,9 @@ Para que a aplicação seja inicializada pela primeira vez, é necessário execu
 
 * Criação de um arquivo .env e preencher os campos da seguinte forma: 
 * DATABASE_URL: "postgresql://janedoe:mypassword@localhost:5432/mydb?schema=sample"
+
 Alterando o link de conexão com o banco de dados, usuário e senha personalizado que estará usando. 
+
 * SECRET: Chave v4 UUID qualquer gerada. 
 Exemplo: 'da755695-01a4-44c1-8380-9bde6f45cf5e'.
 
