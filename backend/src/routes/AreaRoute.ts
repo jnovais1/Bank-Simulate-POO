@@ -1,9 +1,9 @@
 import { Router } from "express";
 import { ensureAuthenticateUser } from "../middlewares/ensureAuthenticateUser";
-import { CreateAreaVideoController } from "../Modules/Areas/create_area/area_video/CreateAreaVideo/CreateAreaVideoController";
-import { DeleteAreaVideoByIDController } from "../Modules/Areas/create_area/area_video/DeleteAreaVideo/DeleteAreaVideoController";
-import { ReadAreaVideoController } from "../Modules/Areas/create_area/area_video/ReadAreaVideo/ReadAreaVideoController";
-import { UpdateAreaVideoController } from "../Modules/Areas/create_area/area_video/UpdateArea/UpdateAreaVideoController";
+import { CreateAreaVideoController } from "../Modules/Areas/area_video/CreateAreaVideo/CreateAreaVideoController";
+import { DeleteAreaVideoByIDController } from "../Modules/Areas/area_video/DeleteAreaVideo/DeleteAreaVideoController";
+import { ReadAreaVideoController } from "../Modules/Areas/area_video/ReadAreaVideo/ReadAreaVideoController";
+import { UpdateAreaVideoController } from "../Modules/Areas/area_video/UpdateAreaVideo/UpdateAreaVideoController";
 import { CreateAreaController } from "../modules/Areas/create_area/CreateAreaController";
 import { DeleteAreaByIDController } from "../modules/Areas/DeleteArea/ByID/DeleteAreaByIDController";
 import { ReadAreaController } from "../modules/Areas/ReadArea/ByID/ReadAreaController";
