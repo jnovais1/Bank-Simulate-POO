@@ -1,15 +1,14 @@
 import { prisma } from "../../../../database/PrismaClient";
 
-export interface IDeleteAreaVideo {
-    area_id: number;
+export interface IDeleteAreaOnlyVideo {
     video_id: number;   
 }
 
-export class DeleteAreaVideo {
-    async execute({ area_id, video_id }: IDeleteAreaVideo) {
+export class DeleteAreaOnlyVideo {
+    async execute({ video_id }: IDeleteAreaOnlyVideo) {
         const deletedAreaVideo = await prisma.area_video.deleteMany({
             where: {
-                video_id, area_id
+                video_id
             }
         })
         return deletedAreaVideo;
