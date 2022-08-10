@@ -34,4 +34,8 @@ npx prisma db push
 npm start 
 <ul>
 
+
+- ***Em caso de erro com o ".prisma/client", executar os seguintes passos:***
   
+ - CTRL + SHIFT + P > Developer: Reload Window
+ 
