@@ -36,6 +36,6 @@ npm start
 
 
 - ***Em caso de erro com o ".prisma/client", executar os seguintes passos:***
-  
+ - Utilizando a IDE "VSCode": 
  - CTRL + SHIFT + P > Developer: Reload Window
  
