@@ -20,8 +20,7 @@ DATABASE_URL: "postgresql://janedoe:mypassword@localhost:5432/mydb?schema=sample
 <strong><li>SECRET: Chave v4 UUID qualquer gerada. </li></strong>
 Exemplo: 'da755695-01a4-44c1-8380-9bde6f45cf5e'.
 
-<strong><li>cd backend <li></strong>
-cd backend
+<strong><li>cd backend </strong>
 
 <strong><li>Instalação dos módulos: </li></strong>
 npm install 
