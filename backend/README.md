@@ -15,7 +15,7 @@ A criação de modelos e conexão é feita pelo 'Prisma.io'.
 <ul>
 <strong><li>Criação de um arquivo .env e preencher os campos da seguinte forma: </strong>
 
-DATABASE_URL: "postgresql://janedoe:mypassword@localhost:5432/mydb?schema=sample". </li> Alterando o link de conexão com o banco de dados, usuário e senha personalizado que estará usando.
+DATABASE_URL: "mysql://janedoe:mypassword@localhost:3306/mydb". </li> Alterando o link de conexão com o banco de dados, usuário e senha personalizado que estará usando.
 
 <strong><li>SECRET: Chave v4 UUID qualquer gerada. </li></strong>
 Exemplo: 'da755695-01a4-44c1-8380-9bde6f45cf5e'.
