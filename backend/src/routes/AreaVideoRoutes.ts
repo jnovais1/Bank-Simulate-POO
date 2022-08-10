@@ -13,7 +13,7 @@ const deleteAreaVideoByID = new DeleteAreaVideoByIDController();
 const updateAreaVideo = new UpdateAreaVideoController();
 
 areaVideoRoutes.get('/:id', readAreaVideoById.handle);
-areaVideoRoutes.post('/', ensureAuthenticateUser, createAreaVideoController.handle);
+areaVideoRoutes.post('/:id/:id2', ensureAuthenticateUser, createAreaVideoController.handle);
 areaVideoRoutes.put('/:id', ensureAuthenticateUser, updateAreaVideo.handle);
 areaVideoRoutes.delete('/:id/:id2', ensureAuthenticateUser, deleteAreaVideoByID.handle);
 
