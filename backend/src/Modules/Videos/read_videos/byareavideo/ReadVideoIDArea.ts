@@ -17,7 +17,8 @@ export class ReadVideoByIDArea {
                 area_video: {
                     every: {
                         area_id
-                    }
+                    },
+                    
                 }
             }
         });

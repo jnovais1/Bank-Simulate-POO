@@ -13,6 +13,7 @@ export class CreateAreaVideo {
         if (maxOrderVideo) {
             throw new Error("Uma área não pode possuir mais de 10 vídeos.")
         }
+
         const newAreaVideo = await prisma.area_video.create({
             data: {
                 area_id,
