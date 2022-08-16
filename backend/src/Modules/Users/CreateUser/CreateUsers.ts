@@ -24,11 +24,12 @@ export class CreateUsers {
                 email: email,
             }
         });
-
         if (emailAlreadyInUse) {
             throw new Error("E-mail já está em uso.")
 
-        } const hashPassword = await hash(password, 10);
+        } 
+        
+        const hashPassword = await hash(password, 10);
 
         const newUser = await prisma.user.create({
             data: {

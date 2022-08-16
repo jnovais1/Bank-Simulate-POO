@@ -25,13 +25,13 @@ export class CreateAreas {
                 name,
                 description,
                 user_id
-            /*    
-                area_video: {
-                    create: [
-                        {video_id, order, user_id}
-                    ]       
-                }                          
-            */
+                /*    
+                    area_video: {
+                        create: [
+                            {video_id, order, user_id}
+                        ]       
+                    }                          
+                */
             }
         });
         return newArea;

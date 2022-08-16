@@ -13,6 +13,6 @@ export class CreateAreaController {
             video_id,
             order
         });
-        return response.json("Área cadastrada! " + result);
+        return response.json(result);
     }
 }
