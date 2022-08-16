@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { stringify } from "querystring";
 import { CreateUsers } from "./CreateUsers";
 
 export class CreateUserController {
@@ -13,6 +12,6 @@ export class CreateUserController {
         name,
         email
        });
-       return response.json(result);
+       return response.json("username: " + username + "  name: " + name + "  email: " + email);
     }
 }
