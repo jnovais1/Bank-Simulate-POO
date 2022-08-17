@@ -6,11 +6,15 @@ interface IReadAreaVideo {
 
 export class ReadAreaVideoByID {
     async execute({ id }: IReadAreaVideo) {
-        const result = await prisma.area_video.findMany({
+        const findedVideos = await prisma.video.findMany({
             where: {
-                area_id: id
+                area_video: {
+                    every: {
+                        area_id: id
+                    }
+                }
             }
         });
-        return result;
+        return findedVideos;
     }
 }
