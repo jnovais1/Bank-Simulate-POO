@@ -14,6 +14,6 @@ export class CreateAreaVideoController {
             area_id,
             order
         });
-        return res.json("Área cadastrada. " + result);
+        return res.json(result);
     }
 }
