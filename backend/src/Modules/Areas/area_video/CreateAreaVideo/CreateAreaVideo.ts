@@ -21,7 +21,16 @@ export class CreateAreaVideo {
                 user_id,
                 video_id
             },
-        });
-        return newAreaVideo;
+        })
+        const newVideo = await prisma.video.findFirst({
+            where: {
+                area_video: {
+                    some: {
+                        video_id
+                    }
+                }
+            }
+        })
+        return (newVideo);
     }
 }
