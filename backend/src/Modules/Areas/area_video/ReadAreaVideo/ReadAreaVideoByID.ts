@@ -9,7 +9,7 @@ export class ReadAreaVideoByID {
         const findedVideos = await prisma.video.findMany({
             where: {
                 area_video: {
-                    every: {
+                    some: { 
                         area_id: id
                     }
                 }
