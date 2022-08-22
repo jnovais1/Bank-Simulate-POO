@@ -23,6 +23,6 @@ export class UpdateUser {
                 password: hashPassword
             },
         });
-        return "username:" + username + ". email:" + email + ". nome: " + name ;
+        return (result)
     }
 }
