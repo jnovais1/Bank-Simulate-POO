@@ -1,3 +1,4 @@
+import { hash } from "bcrypt";
 import { prisma } from "../../../database/PrismaClient";
 
 interface IUpdateUser {
@@ -10,6 +11,7 @@ interface IUpdateUser {
 
 export class UpdateUser {
     async execute({user_id, name, username, email, password}: IUpdateUser) {
+        const hashPassword = await hash(password, 10);
         const result = await prisma.user.update({
             where: {
                 'id': user_id
@@ -18,9 +20,9 @@ export class UpdateUser {
                 name,
                 username,
                 email,
-                password
+                password: hashPassword
             },
         });
-        return result;
+        return "username:" + username + ". email:" + email + ". nome: " + name ;
     }
 }

@@ -8,7 +8,7 @@ export class ReadAreaVideoByID {
     async execute({ id }: IReadAreaVideo) {
         const findedVideos = await prisma.video.findMany({
             where: {
-                area_video: {
+                area_video: { 
                     some: { 
                         area_id: id
                     }
