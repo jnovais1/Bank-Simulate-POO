@@ -19,7 +19,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikp1YW4xIiwiaWF0IjoxNjU4NzY5MjI5LCJleHAiOjE2NTg4NTU2MjksInN1YiI6Ikp1YW4xIn0.ORK0tEyv4Vh68eBw8qYNG9i--X1LAZ4_LQZ8rjOLq24",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGV1czEiLCJpYXQiOjE2NjExOTE1MDMsImV4cCI6MTY2MTI3NzkwMywic3ViIjoibWF0ZXVzMSJ9.O6jI1sboxG-_q2RFvi9mZQDi4hjKyD3QuqgZC3gfw1o",
 											"type": "string"
 										}
 									]
@@ -28,7 +28,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"Area1\",\r\n    \"description\": \"SIM\",\r\n    \"user_id\": \"95dba68e-c340-4d50-879e-ee89c7ca8c75\"\r\n}",
+									"raw": "{\r\n    \"name\": \"Are1212121212a1\",\r\n    \"description\": \"SIM\",\r\n    \"user_id\": 1\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -36,11 +36,11 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:3000/area",
+									"raw": "localhost:3001/area",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"area"
 									]
@@ -73,11 +73,11 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:3000/area/1",
+									"raw": "localhost:3001/area/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"area",
 										"1"
@@ -92,11 +92,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/area/1",
+									"raw": "localhost:3001/area/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"area",
 										"1"
@@ -111,11 +111,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/area/",
+									"raw": "localhost:3001/area/",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"area",
 										""
@@ -132,7 +132,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imp1YW4xMiIsImlhdCI6MTY1OTQ2OTc2OSwiZXhwIjoxNjU5NTU2MTY5LCJzdWIiOiJqdWFuMTIifQ.VIjod43ah4u3D0h1XkBrCQtt3DdIdrK2c5hoeOC9c4g",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGV1czEiLCJpYXQiOjE2NjExOTE1MDMsImV4cCI6MTY2MTI3NzkwMywic3ViIjoibWF0ZXVzMSJ9.O6jI1sboxG-_q2RFvi9mZQDi4hjKyD3QuqgZC3gfw1o",
 											"type": "string"
 										}
 									]
@@ -140,14 +140,14 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/area/2",
+									"raw": "localhost:3001/area/11",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"area",
-										"2"
+										"11"
 									]
 								}
 							},
@@ -173,11 +173,11 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:3000/user",
+									"raw": "localhost:3001/user",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"user"
 									]
@@ -192,7 +192,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"username\": \"juan\",\r\n    \"password\": \"juan\"\r\n}",
+									"raw": "{\r\n    \"username\": \"mateus1\",\r\n    \"password\": \"mateus\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -200,11 +200,11 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:3000/user/authenticate",
+									"raw": "localhost:3001/user/authenticate",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"user",
 										"authenticate"
@@ -219,11 +219,11 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/user/1",
+									"raw": "localhost:3001/user/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"user",
 										"1"
@@ -248,11 +248,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/user",
+									"raw": "localhost:3001/user",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"user"
 									]
@@ -276,11 +276,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/user/1",
+									"raw": "localhost:3001/user/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"user",
 										"1"
@@ -314,11 +314,11 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:3000/user/1",
+									"raw": "localhost:3001/user/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"user",
 										"1"
@@ -357,11 +357,11 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:3000/forms",
+									"raw": "localhost:3001/forms",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"forms"
 									]
@@ -394,11 +394,11 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:3000/forms/1",
+									"raw": "localhost:3001/forms/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"forms",
 										"1"
@@ -413,11 +413,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/forms/1",
+									"raw": "localhost:3001/forms/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"forms",
 										"1"
@@ -442,11 +442,11 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/forms/1",
+									"raw": "localhost:3001/forms/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"forms",
 										"1"
@@ -485,11 +485,11 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:3000/video",
+									"raw": "localhost:3001/video",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"video"
 									]
@@ -522,11 +522,11 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:3000/video/1",
+									"raw": "localhost:3001/video/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"video",
 										"1"
@@ -541,11 +541,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/video",
+									"raw": "localhost:3001/video",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"video"
 									]
@@ -559,11 +559,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/video/1",
+									"raw": "localhost:3001/video/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"video",
 										"1"
@@ -588,11 +588,11 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/video/2",
+									"raw": "localhost:3001/video/2",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"video",
 										"2"
@@ -631,11 +631,11 @@
 									}
 								},
 								"url": {
-									"raw": "localhost:3000/area/video",
+									"raw": "localhost:3001/area/video",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"area",
 										"video"
@@ -650,11 +650,11 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "localhost:3000/area/video/1",
+									"raw": "localhost:3001/area/video/1",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3001",
 									"path": [
 										"area",
 										"video",
@@ -665,18 +665,60 @@
 							"response": []
 						},
 						{
-							"name": "Delete Area Video",
+							"name": "Delete Area Video By ID",
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/areavideo/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"areavideo",
+										"1"
+									]
+								}
 							},
 							"response": []
 						},
 						{
 							"name": "Update Area Video",
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/areavideo/1/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"areavideo",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete only video",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:30001/areavideo/1",
+									"host": [
+										"localhost"
+									],
+									"port": "30001",
+									"path": [
+										"areavideo",
+										"1"
+									]
+								}
 							},
 							"response": []
 						}
