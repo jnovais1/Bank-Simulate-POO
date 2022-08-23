@@ -18,7 +18,7 @@ export async function ensureAuthenticateUser(req: Request, res: Response, next: 
     try {
         const { sub } = verify(
             token,
-            "efcc3fff26baa6c8a3b1a37bed92630d"
+            process.env.SECRET
         );
 
         return next();
